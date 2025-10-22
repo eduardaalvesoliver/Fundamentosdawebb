@@ -4,42 +4,299 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cadastro do usuário</title>
+
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #cbe9da; 
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #ffffff;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px 0;
+    }
+
+    header h1 {
+      color: #2e5c4b;
+      font-size: 28px;
+      margin: 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #295844;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h2 {
+      color: #235749;
+    }
+
+    p {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a.botao {
+      display: inline-block;
+      margin: 10px;
+      background-color: #66bb6a;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+
+    a.botao:hover {
+      background-color: #57a05d;
+    }
+
+    footer {
+      background-color: #295345;
+      color: white;
+      padding: 10px 0;
+      border-radius: 20px 20px 0 0;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
- <header> 
-      <h1>&#128062 ONG ame os animais &#128062</h1>
-      <nav>
-        <ul>
-            <li><a href="index.html">inicio</a></li> 
-            <li><a href="projeto.html">Projeto</a></li>
-            <li><a href="cadastro.html">cadastro</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-        <section> 
-            <h2>quem somos?</h2>
-            <p>somos uma organização sem fins lucrativos que atua com animais abandonados.</p>
-            <img src="imagens/cachorro.jpg" alt="voluntários em ação">
-        </section>
 
-        </section>
-        <h2>Missão da ong ame os animais</h2>
-        <p>&#128049 Promover dignidade e oportunidade de acolhimento aos animais abandonados e da uma
-            vida melhor e mais digna a eles. &#128049 </p>
-        </section>
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #d9f3e8; 
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
 
-        </section>
-        <h2>contato da ong ame os animais</h2>
-        <address>
-            <p>🏠<strong> Endereço:</strong> Rua passagem bingo,123 - Bairro Bela Vista - São Paulo/SP</p>
-            <p>📩</strong> Email:</strong> contato@organização.org.br</p>
-            <p>📲</strong>Telefone:</strong> (11) 9999-9999</p>
-        </addreess>
-        <section>
-    </main>
-     </footer>
-         <p>&copy; 2025 ONG ame os animais</p>
-    </footer>
+header {
+  background-color: #e8fff2;
+  border-bottom: 3px solid #9ed6b5;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #2b7a4b;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2b7a4b;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.container section {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+}
+
+h2, h3 {
+  color: #2b7a4b;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: "🐾 ";
+}
+
+.botoes-centrais {
+  margin: 20px 0;
+}
+
+.menu-btn {
+  background-color: #2bd770;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.menu-btn:hover {
+  background-color: #3e9f64;
+}
+
+footer {
+  background-color: #2b7a4b;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+}
+</style>
+  <header>
+      <h1>🐾 ONG Ame os Animais 🐾</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="menu-btn ativo">Início</a></li>
+        <li><a href="projeto.html" class="menu-btn">Projetos</a></li>
+        <li><a href="cadastro.html" class="menu-btn">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+          <main class="container">
+  <section>
+    <h2>💚 Bem-vindo à ONG Ame os Animais 💚</h2>
+    <p>Somos uma organização sem fins lucrativos dedicada ao resgate.</p>
+
+    <h3>🐶 Nossa Missão</h3>
+    <p>Promover amor, dignidade e oportunidades para todos os animais 🐕 </p>
+
+    <style>
+    .acoes-lista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.acao-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #e8fff2;
+  border: 2px solid #2b7a4b;
+  border-radius: 30px;
+  padding: 10px 20px;
+  width: 80%;
+  max-width: 500px;
+  font-weight: 500;
+  color: #2b7a4b;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.acao-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.icone {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+</style>
+   <h2>🐱 Nossas Ações</h2>
+  <div class="acoes-lista">
+  <div class="acao-item">
+   <span class="icone">✔️</span> Resgate de animais em situação de risco
+</div>
+  <div class="acao-item">
+<span class="icone">✔️</span> Feiras de adoção e campanhas de conscientização
+  </div>
+  <div class="acao-item">
+    <span class="icone">✔️</span> Castração e cuidados veterinários
+  </div>
+</div>
+
+    <div class="botoes-centrais">
+      <a href="projeto.html" class="menu-btn">Conheça nossos Projetos</a>
+      <a href="cadastro.html" class="menu-btn">Quero ser Voluntário</a>
+    </div>
+
+<style>
+.contato {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px; 
+  line-height: 1.8;
+}
+
+.contato h3 {
+  font-size: 18px;
+  color: #0b5e2b;
+  margin-bottom: 10px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 5px;               
+}
+
+.info-container p {
+  margin: 0;
+  color: #333;
+}
+
+.info-container strong {
+  color: #0b5e2b;
+}
+
+</style>
+ <section class="contato">
+  <h3>📞 Contato da ONG <span>Ame os Animais</span></h3>
+  <div class="info-container">
+    <p>📍 <strong>Endereço:</strong> Rua Passagem Limpo, 123 - São Paulo/SP</p>
+    <p>📧 <strong>Email:</strong> contato@ameosanimais.org.br</p>
+    <p>📞 <strong>Telefone:</strong> (11) 99999-9099</p>
+    
+  </div>
+</section>
+
+</main>
+
+    <footer>
+    <p>© 2025 ONG Ame os Animais 🐾 | Email: contato@ameosanimas.org.br
+  </footer>
 </body>
 </html>
+  
